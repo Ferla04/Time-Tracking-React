@@ -1,7 +1,7 @@
 import React from 'react';
 import './Menu.css';
 
-const Menu = ({data}) => {
+const Menu = ({data, setTime}) => {
 
     return (
         <div className='menu'>
@@ -14,9 +14,9 @@ const Menu = ({data}) => {
             </section>
 
             <section className='search'>
-                <button>Daily</button>
-                <button>Weekly</button>
-                <button>Monthly</button>
+                <button onClick={() => setTime('daily')}>Daily</button>
+                <button onClick={() => setTime('weekly')}>Weekly</button>
+                <button onClick={() => setTime('monthly')}>Monthly</button>
             </section>
         </div>
     )

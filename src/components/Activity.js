@@ -3,7 +3,7 @@ import puntos from '../images/icon-ellipsis.svg';
 
 const Activity = ({data, time}) => {
 
-    const { color,title, img, timeframes } = data;
+    const { color, title, img, timeframes } = data;
     const { [time]:hours } = timeframes;
 
     return (

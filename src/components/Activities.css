@@ -6,6 +6,7 @@
 }
 
 .cards{
+    cursor: pointer;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -26,7 +27,6 @@
 
 .cards:hover  main{
     background-color: var(--bg-cards-color-hover);
-    cursor: pointer;
 }
 
 .cards .logo{
