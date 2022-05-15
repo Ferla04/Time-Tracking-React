@@ -1,0 +1,52 @@
+.menu{
+    width: 250px;
+    background-color: var(--bg-cards-color);
+}
+
+.menu, .perfil{
+    border-radius: 15px;
+}
+
+.perfil{
+    background-color: var(--bg-perfil-color);
+    padding: 30px;
+    height: 350px;
+}
+
+.perfil span{
+    color: var(--ft-third-color);
+}
+
+.perfil img{
+    border: 3px solid var(--ft-color);
+    border-radius: 50%;
+    width: 85px;
+}
+
+.perfil article{
+    margin-top: 30px;
+}
+
+.perfil p{
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.search{
+    padding: 10px 30px;
+} 
+
+.search button{
+    background-color: transparent;
+    border: none;
+    color: var(--ft-second-color);
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.search :hover{
+    color: var(--ft-color);
+}

@@ -1,10 +1,26 @@
 :root{
-	--background-color: hsl(226, 43%, 10%)
+	--background-color: hsl(226, 43%, 10%);
+	--bg-perfil-color: hsl(246, 80%, 60%);
+    --bg-cards-color: hsl(235, 46%, 20%);
+    --bg-cards-color-hover: hsl(236, 41%, 34%,1);
+    --ft-color: hsl(0, 0%, 100%);
+    --ft-second-color: hsl(235, 45%, 61%);
+	--ft-third-color: hsl(236, 100%, 87%);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: 'Rubik', sans-serif;
 	background-color: var(--background-color);
+	color: var(--ft-color);
+	font-family: 'Rubik', sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 

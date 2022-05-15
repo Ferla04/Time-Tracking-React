@@ -1,17 +1,22 @@
 import React from 'react';
-import data from '../data';
+import './Menu.css';
 
-
-const Menu = () => {
+const Menu = ({data}) => {
 
     return (
-        <div>
-            <section>
+        <div className='menu'>
+            <section className='perfil'>
                 <img src={data.photo} alt='user'/>
                 <article>
-                    <span></span>
-                    <p></p>
+                    <span>Report for</span>
+                    <p>{data.user}</p>
                 </article>
+            </section>
+
+            <section className='search'>
+                <button>Daily</button>
+                <button>Weekly</button>
+                <button>Monthly</button>
             </section>
         </div>
     )
