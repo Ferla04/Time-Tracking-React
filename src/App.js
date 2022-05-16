@@ -10,7 +10,7 @@ function App() {
 
 	return (
 		<div className='principal'>
-			<Menu data={data} setTime={setTime}/>
+			<Menu data={data} setTime={setTime} time={time}/>
 			<Activities data={data} time={time}/>
 		</div>
 	)

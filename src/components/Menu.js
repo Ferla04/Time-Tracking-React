@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 import './Menu.css';
 
-const Menu = ({data, setTime}) => {
+const Menu = ({data, setTime, time}) => {
+
+    useLayoutEffect(() => {
+        document.querySelectorAll('.btnMenu').forEach(e => 
+            e.style.color = 'var(--ft-second-color)'
+        )
+        document.getElementById(time).style.color = 'var(--ft-color)';
+    }, [time])
 
     return (
         <div className='menu'>
@@ -14,9 +21,9 @@ const Menu = ({data, setTime}) => {
             </section>
 
             <section className='search'>
-                <button onClick={() => setTime('daily')}>Daily</button>
-                <button onClick={() => setTime('weekly')}>Weekly</button>
-                <button onClick={() => setTime('monthly')}>Monthly</button>
+                <button className='btnMenu' id='daily' onClick={() => setTime('daily')}>Daily</button>
+                <button className='btnMenu' id='weekly' onClick={() => setTime('weekly')}>Weekly</button>
+                <button className='btnMenu' id='monthly' onClick={() => setTime('monthly')}>Monthly</button>
             </section>
         </div>
     )

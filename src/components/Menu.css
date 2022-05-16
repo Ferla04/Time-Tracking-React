@@ -47,6 +47,10 @@
     margin: 20px 0;
 }
 
-.search :hover{
+.search :hover {
+    color: var(--ft-color);
+}
+
+.buttonFocus{
     color: var(--ft-color);
 }
